@@ -1,5 +1,5 @@
 //════════════════════════════//
-//Credit © Xeon
+//© 2022 Xeon Bot Inc. Cheems Bot MD
 //════════════════════════════//
 
 require("./config.js")
@@ -25,18 +25,18 @@ const {
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
 async function startXeonBotInc() {
-console.log(color(figlet.textSync('Cheems Bot-MD', {
+console.log(color(figlet.textSync('Evania-MD', {
 		font: 'Pagga',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
 	    width: 80,
 		whitespaceBreak: true
         }), 'yellow'))
-console.log(color('\n🐶 INSTA ID: itzme_lucifer01 ','silver'))
+console.log(color('\n🐶 YT CHANNEL: AlonePhilic ','silver'))
 console.log(color('🐶 GITHUB: DreamyPrince ','silver'))
 console.log(color('🐶 WA NUMBER: +919778062036 ','silver'))
-console.log(color(' DreamyPrince | Akhil','mediumseagreen'))
-    console.log(color('🐶','red'), color('I Took This Script From My Friend Xeon With His Permission and All the Credits Goes To Him By Akhil!', 'yellow'))
+console.log(color('Evania Bot © 2022','mediumseagreen'))
+    console.log(color('🐶','red'), color('I Took This Script from Xeon!', 'yellow'))
     console.log(color('🐶','red'), color('Source Code Version: 3.0', 'aqua'))
     console.log(color('🐶','red'), color('Bug? Error? Suggestion? Talk to developer:', 'aqua'))
     console.log(color('🐶', 'cyan'), color('https://wa.me/919778062036'))
@@ -47,7 +47,7 @@ console.log(color(' DreamyPrince | Akhil','mediumseagreen'))
     const XeonBotInc = XeonBotIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Subscribe Xeon','Safari','1.0.0'],
+        browser: ['Follow me on Insta itzme_lucifer01','Safari','1.0.0'],
         auth: state,
         version
     })
@@ -59,7 +59,7 @@ store.bind(XeonBotInc.ev)
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
     let pa7rick = await XeonBotInc.sendContact(callerId, global.owner)
-    XeonBotInc.sendMessage(callerId, { text: `Automatic Block System!\nDon't Call Me!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted : pa7rick })
+    XeonBotInc.sendMessage(callerId, { text: `Automatic Block System!\nDon't Call Bot!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted : pa7rick })
     await sleep(8000)
     await XeonBotInc.updateBlockStatus(callerId, "block")
     }
@@ -137,9 +137,9 @@ XeonBotInc.ev.on('group-participants.update', async (anu) => {
                 const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
 	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 	            const xmembers = metadata.participants.length
-                let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+                let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 12345,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'DreamyPrince', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":5,"isForwarded":false},sendEphemeral: true}
                 xeonbody = `┌─❖
-│「 Hi Vro👋 」
+│「 𝗛𝗶 👋 」
 └┬❖ 「 @${xeonName.split("@")[0]}  」
    │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
    │✑  ${metadata.subject}
@@ -148,9 +148,8 @@ XeonBotInc.ev.on('group-participants.update', async (anu) => {
    │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
    │✑ ${xtime} ${xdate}
    └───────────────┈ ⳹`
-   
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome Dear 🥰'}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome Vro 💐'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -158,7 +157,7 @@ mimetype: docs,
 jpegThumbnail:buffer,
 mentions: [num],
 fileName: `${metadata.subject}`,
-fileLength: 192843,
+fileLength: 99999999999999,
 caption: xeonbody,
 footer: `${botname}`,
 buttons: buttons,
@@ -194,7 +193,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    //dont forget to put my name(Xeon) as credit
    //you fail to put, i sue you for sure!
 let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'Sayonara 🥀'}, type: 1}
+{buttonId: `wkwkwk`, buttonText: {displayText: 'Adiós 🥀'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -202,7 +201,7 @@ mimetype: docs,
 jpegThumbnail:buffer,
 mentions: [num],
 fileName: `${metadata.subject}`,
-fileLength: 219999,
+fileLength: 99999999999999,
 caption: xeonbody,
 footer: `${botname}`,
 buttons: buttons,
