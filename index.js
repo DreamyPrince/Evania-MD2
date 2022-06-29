@@ -1,24 +1,5 @@
 //════════════════════════════//
-//If you want to recode, reupload
-//or copy the codes/script,
-//pls give credit
-//no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. Cheems Bot MD
-//Thank you to Lord Buddha, Family and Myself
-//════════════════════════════//
-//recode kar ke youtube pe upload kar rhe ya
-//codes copy kar ke apne script me dal rhe
-//hai to, description me xeon ka yt channel
-// ka link paste kr dena as a cradit or github 
-//repo me bhi tag kardena baki jo
-//bhi karna hai apki marzi, thank you!🦄
-//════════════════════════════//
-//If you recode and uploading on your channel
-//or copy pasting the codes in ur script, 
-//i give permission to do as long as you
-//put Xeons youtube channel link in the video
-//description and tag me on githuh repo, 
-//thank you🦄
+//Credit © Xeon
 //════════════════════════════//
 
 require("./config.js")
@@ -51,17 +32,17 @@ console.log(color(figlet.textSync('Cheems Bot-MD', {
 	    width: 80,
 		whitespaceBreak: true
         }), 'yellow'))
-console.log(color('\n🐶 YT CHANNEL: Xeon ','silver'))
-console.log(color('🐶 GITHUB: DGXeon ','silver'))
-console.log(color('🐶 WA NUMBER: +916909137213 ','silver'))
-console.log(color('  🦄Xeon Bot Inc. 2022🦄','mediumseagreen'))
-    console.log(color('🐶','red'), color('I Wrote This Script By Myself!', 'yellow'))
+console.log(color('\n🐶 INSTA ID: itzme_lucifer01 ','silver'))
+console.log(color('🐶 GITHUB: DreamyPrince ','silver'))
+console.log(color('🐶 WA NUMBER: +919778062036 ','silver'))
+console.log(color(' DreamyPrince | Akhil','mediumseagreen'))
+    console.log(color('🐶','red'), color('I Took This Script From My Friend Xeon With His Permission and All the Credits Goes To Him By Akhil!', 'yellow'))
     console.log(color('🐶','red'), color('Source Code Version: 3.0', 'aqua'))
     console.log(color('🐶','red'), color('Bug? Error? Suggestion? Talk to developer:', 'aqua'))
-    console.log(color('🐶', 'cyan'), color('https://wa.me/916909137213'))
-    console.log(color('🐶', 'cyan'), color('Cheems Bot Is Online...', 'pink'))
+    console.log(color('🐶', 'cyan'), color('https://wa.me/919778062036'))
+    console.log(color('🐶', 'cyan'), color('Evania Bot Is Online...', 'pink'))
     console.log(color('🐶', 'cyan'), color('Welcome Back Owner! Hope You Doing Well~', 'magenta'))
-    console.log(color('🐶','red'), color('Thanks For Using Cheems Bot', 'white'))
+    console.log(color('🐶','red'), color('Thanks For Using Evania Bot', 'white'))
     let { version, isLatest } = await fetchLatestBaileysVersion()
     const XeonBotInc = XeonBotIncConnect({
         logger: pino({ level: 'silent' }),
@@ -78,7 +59,7 @@ store.bind(XeonBotInc.ev)
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
     let pa7rick = await XeonBotInc.sendContact(callerId, global.owner)
-    XeonBotInc.sendMessage(callerId, { text: `Automatic Block System!\nDon't Call Bot!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted : pa7rick })
+    XeonBotInc.sendMessage(callerId, { text: `Automatic Block System!\nDon't Call Me!\nPlease Ask Or Contact The Owner To Unblock You!`}, { quoted : pa7rick })
     await sleep(8000)
     await XeonBotInc.updateBlockStatus(callerId, "block")
     }
@@ -105,7 +86,7 @@ XeonBotInc.ev.on('groups.update', async pea => {
        try {
        ppgc = await XeonBotInc.profilePictureUrl(pea[0].id, 'image')
        } catch {
-       ppgc = 'https://telegra.ph/file/3983c55ac7f3ebea225d3.jpg'
+       ppgc = 'https://i.imgur.com/HqUlMtv.jpeg'
        }
        let wm_fatih = { url : ppgc }
        if (pea[0].announce == true) {
@@ -158,7 +139,7 @@ XeonBotInc.ev.on('group-participants.update', async (anu) => {
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: buffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 xeonbody = `┌─❖
-│「 𝗛𝗶 👋 」
+│「 Hi Vro👋 」
 └┬❖ 「 @${xeonName.split("@")[0]}  」
    │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
    │✑  ${metadata.subject}
@@ -167,11 +148,9 @@ XeonBotInc.ev.on('group-participants.update', async (anu) => {
    │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
    │✑ ${xtime} ${xdate}
    └───────────────┈ ⳹`
-   //if you copy the code value,
-   //dont forget to put my name(Xeon) as credit
-   //you fail to put, i sue you for sure!
+   
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome Dear 🥰'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -179,7 +158,7 @@ mimetype: docs,
 jpegThumbnail:buffer,
 mentions: [num],
 fileName: `${metadata.subject}`,
-fileLength: 99999999999999,
+fileLength: 192843,
 caption: xeonbody,
 footer: `${botname}`,
 buttons: buttons,
@@ -223,7 +202,7 @@ mimetype: docs,
 jpegThumbnail:buffer,
 mentions: [num],
 fileName: `${metadata.subject}`,
-fileLength: 99999999999999,
+fileLength: 219999,
 caption: xeonbody,
 footer: `${botname}`,
 buttons: buttons,
