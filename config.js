@@ -1,24 +1,5 @@
 //════════════════════════════//
-//If you want to recode, reupload
-//or copy the codes/script,
-//pls give credit
-//no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. Cheems Bot MD
-//Thank you to Lord Buddha, Family and Myself
-//════════════════════════════//
-//recode kar ke youtube pe upload kar rhe ya
-//codes copy kar ke apne script me dal rhe
-//hai to, description me xeon ka yt channel
-// ka link paste kr dena as a cradit or github 
-//repo me bhi tag kardena baki jo
-//bhi karna hai apki marzi, thank you!🦄
-//════════════════════════════//
-//If you recode and uploading on your channel
-//or copy pasting the codes in ur script, 
-//i give permission to do as long as you
-//put Xeons youtube channel link in the video
-//description and tag me on githuh repo, 
-//thank you🦄
+//© Credit - Xeon
 //════════════════════════════//
 
 const fs = require("fs")
@@ -26,10 +7,10 @@ const chalk = require("chalk")
 
 //aumto functioner
 global.autoTyping = false //auto tying in gc (true to on, false to off)
-global.autoreadpmngc = false //auto reading in gc and pm (true to on, false to off)
+global.autoreadpmngc = true //auto reading in gc and pm (true to on, false to off)
 global.autoReadGc = true //auto reading in gc (true to on, false to off)
-global.autoReadAll = false // auto reading in all pchat gc and status (true to on, false to off)
-global.autoRecord = false //auto recording (true to on, false to off)
+global.autoReadAll = true // auto reading in all pchat gc and status (true to on, false to off)
+global.autoRecord = true //auto recording (true to on, false to off)
 global.available = true //auto available (true to on, false to off)
 
 //documents variants
@@ -41,26 +22,26 @@ global.doc5 = 'application/pdf'
 global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
-global.owner = ['ur number'] //ur owner number
-global.ownername = "ur name"
-global.ytname = "YT: Xeon" //ur yt chanel name
-global.socialm = "GitHub: DGXeon" //ur github or insta name
-global.location = "India, Mizoram, Aizawl" //ur location
+global.owner = ['9778062036'] //ur owner number
+global.ownername = "Akhil"
+global.ytname = "Insta: itzme_lucifer01" //ur insta username
+global.socialm = "GitHub: DreamyPrince" //ur github or insta name
+global.location = "India, Kerala, Trivandrum" //ur location
 
 //bot bombdy
-global.botname = "ur bot name" //ur bot name
-global.websitex = "https://youtu.be/xn9RatOrbuI" //ur website
-global.vidmenu = { url: 'https://a.uguu.se/zlzQZvXH.mp4' } //gif and video menu
-global.packname = "Cheems Bot Stickers\n\n\n\n\n\n\n🦄🦄🦄 "
-global.author = "🦄Dream Guy Xeon"
-global.themeemoji = "🐶"
-global.reactmoji = "😘"
-global.ownertag = ['ur number'] //ur owner tag
-global.ownernummenu = ['ur number'] //ur owner number in menu and all
-global.watermark = "Xeon Bot Inc." //ur watermark
-global.botscript = "https://github.com/DGXeon/CheemsBot-MD3"
-global.linkz1 = "https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS"
-global.linkz2 = "https://chat.whatsapp.com/EcycNbJFCVT5ZsG9xIGkqd"
+global.botname = "Evania" //ur bot name
+global.websitex = "https://github.com/DreamyPrince" //ur website
+global.vidmenu = { url: 'https://i.imgur.com/HqUlMtv.jpeg' } //gif and video menu
+global.packname = "DreamyPrince\n☺️😊"
+global.author = "Akhil"
+global.themeemoji = "😊"
+global.reactmoji = "🌚"
+global.ownertag = ['919778062036'] //ur owner tag
+global.ownernummenu = ['919778062036'] //ur owner number in menu and all
+global.watermark = "Akhil 🌚" //ur watermark
+global.botscript = "https://github.com/DreamyPrince/Evania-MD2"
+global.linkz1 = "https://twitter.com/ItzmeLucifer?t=i2Ze3PXmukElAzdL8efP3A&s=09"
+global.linkz2 = "https://instagram.com/itzme_lucifer01?igshid=YmMyMTA2M2Y="
 
 //Bot theme media
 global.thum = fs.readFileSync("./XeonMedia/theme/cheemspic.jpg") //ur thumb pic
@@ -92,25 +73,25 @@ global.ntilink = []
 global.lolhuman = "KaysaS"
 global.sessionName = "session"
 global.antitags = true
-global.prefa = ['','!','.','🐦','🐤','🗿']
+global.prefa = [''🕊️'⭐'☺️'🌚'🥰'😇'🌝'👻'😼'💝']
 global.mess = {
-    success: 'Done✓',
-    admin: 'This feature is only for admins!',
-    botAdmin: 'Bot Must Be Admin First!',
-    owner: 'This feature is only for owner',
-    group: 'This feature is only for groups!',
+    success: 'Sherienna ✓',
+    admin: 'Ith ninakk ullath alla kutta, ith ente boss Akhil & bakki admins mathre use cheyyavu!',
+    botAdmin: 'Enne aadhyam admin aakk!',
+    owner: 'Ith ninakk ullath alla kutta, ith ente boss Akhil mathre use cheyyavu',
+    group: 'Ith ivde upayogikkendath alla kutta ith groupil idendatha!',
     private: 'This feature is only for private chats!',
-    bot: 'This feature is only for bot',
-    wait: 'In process...',
-    linkm: 'Where is the link?',
-    error: 'Error!',
+    bot: 'This feature is only for me',
+    wait: 'Wait karo kutta...',
+    linkm: 'Link evide 🧐?',
+    error: 'Nokkanda Moonji!',
     ban: 'You have been banned by the owner, if you want to be unbanned, chat owner.',
-    nsfw: 'The nsfw feature has not been activated, please contact the admin to activate',
+    nsfw: 'ambada kema sunny kutta nee kooduthal onnum aagrahikkathe nella kutti aav',
     banChat: 'The bot was banned in this group, please contact the owner to unban'
 }
 global.limitawal = {
     premium: "Infinity",
-    free: 2,
+    free: 20,
     monayawal: 1000
 }
    global.rpg = {
@@ -132,7 +113,7 @@ global.APIs = {
 
 // key
 global.APIKeys = {
-	'https://zenzapis.xyz': 'Your Key',
+	'https://zenzapis.xyz': '1367a5d936',
 }
 //menu logo maker
 global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
